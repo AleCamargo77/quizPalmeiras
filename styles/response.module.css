@@ -1,8 +1,8 @@
 .response {
   display: flex;
   width: 80%;
-  min-width: 500px;
-  height: 100px;
+  min-width: 400px;
+  height: 60px;
   margin: 10px;
   perspective: 1000px;
   cursor: pointer;
@@ -23,8 +23,8 @@
 .front,
 .back {
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

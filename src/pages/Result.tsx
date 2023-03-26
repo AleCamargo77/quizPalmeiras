@@ -12,7 +12,12 @@ export default function Result() {
 
   return (
     <div
-      style={{ backgroundImage: "url(/palmeiras.jpg)" }}
+      style={{
+        backgroundImage: "url(/palmeiras.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+      }}
       className={styles.results}
     >
       <h1>Resultado Final</h1>

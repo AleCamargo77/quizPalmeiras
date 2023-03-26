@@ -20,7 +20,7 @@ const questions: QuestionModel[] = [
   ),
   new QuestionModel(
     203,
-    "Em que ano o Palmeiras conquistou a Tríplice Coroa(Paulista, Copa do Brasil e Brasileiro)? ",
+    "Qual ano conquistou a Tríplice Coroa(Paulista, Copa do Brasil e Brasileiro)? ",
     [
       ResponseModel.notValid("2022"),
       ResponseModel.notValid("2016"),

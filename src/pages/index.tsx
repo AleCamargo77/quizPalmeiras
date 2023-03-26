@@ -69,7 +69,14 @@ export default function Home() {
   }
 
   return question ? (
-    <div style={{ backgroundImage: "url(/palmeiras.jpg)" }}>
+    <div
+      style={{
+        backgroundImage: "url(/palmeiras.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <Quiz
         question={question}
         lastQuestion={idNextQuestion() === undefined}
