@@ -9,7 +9,7 @@
 
 html,
 body {
-  /* background-color: #726c8b; */
+  background-color: #726c8b;
   background-image: url("../src/images/palmeiras.jpg");
   background-size: cover;
   background-position: center;
