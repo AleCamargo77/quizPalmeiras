@@ -3,7 +3,8 @@ import QuestionModel from "../../model/question";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://quiz-palmeiras-utbv.vercel.app/api";
+// const BASE_URL = "http://localhost:3000/api";
 
 export default function Home() {
   const router = useRouter();
