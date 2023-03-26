@@ -6,9 +6,9 @@ import Button from "../../components/Button";
 export default function Result() {
   const router = useRouter();
 
-  const total = +router.query.total;
-  const valid = +router.query.certas;
-  const percent = Math.round((valid / total) * 100);
+  const total = Number(router.query.total);
+  const valid = Number(router.query.certas);
+  const percent = Number(Math.round((valid / total) * 100));
 
   return (
     <div className={styles.results}>

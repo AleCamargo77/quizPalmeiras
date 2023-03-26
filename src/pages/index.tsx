@@ -23,7 +23,6 @@ export default function Home() {
     const json = await resp.json();
     const newQuestion = QuestionModel.createObject(json);
     setQuestion(newQuestion);
-    // console.log(QuestionModel.createObject(json));
   }
 
   useEffect(() => {
@@ -34,21 +33,10 @@ export default function Home() {
     idsQuestions.length > 0 && loadingQuestion(idsQuestions[0]);
   }, [idsQuestions]);
 
-  // function onResponse(index: number) {
-  //   setQuestion(question.responseWith(index));
-  // }
-
-  // function timeOut() {
-  //   if (question.naoRespondida) {
-  //     setQuestion(question.responseWith(-1));
-  //   }
-  // }
-
   function questionResponse(questionResponse: QuestionModel) {
     setQuestion(questionResponse);
     const valid = questionResponse.acertou;
     setResponseValid(responseValid + (valid ? 1 : 0));
-    // console.log(valid ? 1 : 0);
   }
 
   function idNextQuestion() {
@@ -77,16 +65,6 @@ export default function Home() {
     });
   }
 
-  // <div
-  //   style={{
-  //     display: "flex",
-  //     flexDirection: "column",
-  //     height: "100vh",
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  //   }}
-  // >
-  // </div>
   return question ? (
     <Quiz
       question={question}

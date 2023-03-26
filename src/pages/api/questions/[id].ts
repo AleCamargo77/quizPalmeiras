@@ -1,6 +1,6 @@
 import questions from "../bancoDeQuestoes";
 
-export default (req: any5, res: any) => {
+export default (req: any, res: any) => {
   const idSelect = +req.query.id;
 
   const questionChosen = questions.filter(
