@@ -9,8 +9,8 @@
 
 html,
 body {
-  background-color: #726c8b;
-  background-image: url("../src/images/palmeiras.jpg");
+  /* background-color: #726c8b; */
+  /* background-image: url("/palmeiras.jpg"); */
   background-size: cover;
   background-position: center;
   height: 60vh;

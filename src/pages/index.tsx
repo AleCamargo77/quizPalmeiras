@@ -1,11 +1,12 @@
 import Quiz from "../../components/Quiz";
 import QuestionModel from "../../model/question";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const BASE_URL =
-  "https://quiz-palmeiras-utbv-git-main-alecamargo77.vercel.app/api";
+// const BASE_URL =
+//   "https://quiz-palmeiras-utbv-git-main-alecamargo77.vercel.app/api";
 // const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://quiz-palmeiras-utbv.vercel.app//api";
 
 export default function Home() {
   const router = useRouter();
@@ -68,12 +69,14 @@ export default function Home() {
   }
 
   return question ? (
-    <Quiz
-      question={question}
-      lastQuestion={idNextQuestion() === undefined}
-      questionResponse={questionResponse}
-      nextStep={nextStep}
-    />
+    <div style={{ backgroundImage: "url(/palmeiras.jpg)" }}>
+      <Quiz
+        question={question}
+        lastQuestion={idNextQuestion() === undefined}
+        questionResponse={questionResponse}
+        nextStep={nextStep}
+      />
+    </div>
   ) : (
     false
   );

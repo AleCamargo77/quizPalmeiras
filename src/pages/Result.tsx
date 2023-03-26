@@ -11,7 +11,10 @@ export default function Result() {
   const percent = Number(Math.round((valid / total) * 100));
 
   return (
-    <div className={styles.results}>
+    <div
+      style={{ backgroundImage: "url(/palmeiras.jpg)" }}
+      className={styles.results}
+    >
       <h1>Resultado Final</h1>
       <div style={{ display: "flex" }}>
         <Statistic text="Perguntas" valor={total} />
