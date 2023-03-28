@@ -1,6 +1,6 @@
 .response {
   display: flex;
-  width: 80%;
+  width: 40%;
   min-width: 400px;
   height: 60px;
   margin: 10px;
@@ -23,8 +23,8 @@
 .front,
 .back {
   display: flex;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -61,7 +61,7 @@
 
 .valid .content,
 .notValid .content {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -72,13 +72,13 @@
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 20px;
   /* color: #fff; */
 }
 
 .value {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
